@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mesclagem de Celulas </title>
+    <style>
+        body {
+            background-color: lightgrey;
+
+        }
+        main {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 0px;
+            border-radius: 30px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.186);
+            padding-bottom: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0px;
+            padding: 25px;
+            background-color: aqua;
+            color: white;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.186);
+        }
+        
+        h2 {
+            margin: auto;
+            text-align: center;
+            background-color: aqua;
+            max-width: 200px;
+            border-radius: 150px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 400px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        caption {
+            background-color: lightgrey;
+            padding: 10px;
+            font-weight: bolder;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border: 1px solid black;
+        }
+
+        tr, td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;
+        }
+
+        table.final {
+            padding-bottom: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1> Mesclagem de celulas </h1>
+        <h2> Estudo </h2>
+        <table>
+            <caption> Mesclagem de Celulas </caption>
+            <tr>
+                <td> A </td>
+                <td colspan="2"> B </td>
+            </tr>
+            <tr>
+                <td rowspan=" 3 "> D </td>
+                <td> E </td>
+                <td rowspan="2"> F </td>
+            </tr>
+            <tr>
+                <td> H </td>
+            </tr>
+            <tr>
+                <td colspan="2"> K </td>
+            </tr>
+        
+        </table>
+        <h2> Desafio 1 </h2>
+        <table>
+            <caption> Desafio do Alfabeto </caption>
+            <tr>
+                <td> 1 </td>
+                <td> 2 </td>
+                <td rowspan="2"> 3 </td>
+                <td> 4 </td>
+            </tr>
+            <tr>
+                <td> 5 </td>
+                <td> 6 </td>
+                <td> 7 </td>
+            </tr>
+            <tr>
+                <td colspan="3"> 8 </td>
+                <td> 9 </td>
+            </tr>
+            <tr>
+                <td rowspan="2"> 10 </td>
+                <td colspan="2"> 11 </td>
+                <td> 12</td>
+            </tr>
+            <tr>
+                <td> 13 </td>
+                <td> 14 </td>
+                <td> 15 </td>
+            </tr>
+        </table>
+
+        <h2> Desafio 2</h2>
+            <table class="final">
+               
+                <caption> Desafio Numérico </caption>
+                <tr>
+                    <td colspan="4"> A </td>
+                    <td rowspan="4"> B </td>
+                </tr>
+                <tr>
+                    <td rowspan="4"> C </td>
+                    <td> D </td>
+                    <td> E </td>
+                    <td> F </td>
+                </tr>
+                <tr>
+                    <td> G </td>
+                    <td> H </td>
+                    <td> I </td>
+
+                </tr>
+                <tr>
+                    <td> J </td>
+                    <td> K </td>
+                    <td> L </td>
+
+                </tr>
+                <tr>
+                    <td colspan="4"> M </td>
+                </tr>
+            </table>
+    </main>
+</body>
+</html>

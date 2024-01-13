@@ -31,12 +31,17 @@
             border: 1px solid black;
             
         }
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(196, 196, 196);
+        }
+
         .num {
             text-align: right;
         }
     </style>
 </head>
 <body>
+
     <!-- Estudando anatomia da Tabela 
             caption ( Titulo / Legenda da tabela )
             thead ( Esse vai ser o cabeçalho da Tabela )
@@ -48,9 +53,6 @@
             scoop ( Ele vai ser um tag semantica para indicar a quem o TH ( titulo ) se refere 'row' para linha e 'col' para colunas)
 
     -->
-
-
-
 
     <h1> Tabelas Grandes </h1>
     <table>
@@ -74,6 +76,14 @@
             <tr>
                 <td> Rio De Janeiro </td>
                 <td class="num"> 16.054.524</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td>
+                <td class="num"> 20.538.718 </td>
+            </tr>
+            <tr>
+                <td> Bahia </td>
+                <td class="num"> 14.141.626</td>
             </tr>
         </tbody>
         <tfoot>
