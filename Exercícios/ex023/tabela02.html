@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabela </title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption {
+            background-color: rgb(200, 200, 200);
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        th,td {
+            border: 1px solid black;
+            
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Estudando anatomia da Tabela 
+            caption ( Titulo / Legenda da tabela )
+            thead ( Esse vai ser o cabeçalho da Tabela )
+                dentro dele teremos tr ( Linha ), td ( Conteudo Simples ), th ( Titulo )
+            tbody ( O corpo da tabela )
+                tr, td, th
+            tfoot ( O rodapé da tabela )
+                tr, td, th
+            scoop ( Ele vai ser um tag semantica para indicar a quem o TH ( titulo ) se refere 'row' para linha e 'col' para colunas)
+
+    -->
+
+
+
+
+    <h1> Tabelas Grandes </h1>
+    <table>
+        
+        <caption> População dos Estados mais Pika </caption>
+        <thead>
+            <tr>
+                <th scope="col"> Estado </th>
+                <th scope="col" style="width: 120px;"> População </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 44.411.238 </td>
+            </tr>
+            <tr>
+                <td> Paraná </td>
+                <td class="num"> 11.444.380 </td>
+            </tr>
+            <tr>
+                <td> Rio De Janeiro </td>
+                <td class="num"> 16.054.524</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row"> Total da População </th>
+                <td class="num"> <strong>000.000.000</strong> </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
