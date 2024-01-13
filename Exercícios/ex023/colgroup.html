@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ColGroup </title>
+    <style>
+       
+       h1 {
+        text-align: center;
+       }
+       
+       table {
+            width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: lightgrey;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        td,th,tr {
+            border: 1px solid black;
+        }
+        col.cnome {
+            background-color: rgb(195, 255, 235);
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1> ColGroup </h1>
+    <div id="container">
+        <table>
+        
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprofissao">
+            </colgroup>
+            <caption> Cadastro </caption>
+            <thead>
+                <th scope="col"> Nome </th>
+                <th scope="col"> Sexo </th>
+                <th scope="col"> Idade </th>
+                <th scope="col"> Profissão </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Ana Maria </td>
+                    <td> Feminino</td>
+                    <td> 16 </td>
+                    <td> Jornalista </td>
+                </tr>
+                <tr>
+                    <td> Ana Maria </td>
+                    <td> Feminino</td>
+                    <td> 16 </td>
+                    <td> Jornalista </td>
+                </tr>
+                <tr>
+                    <td> Ana Maria </td>
+                    <td> Feminino</td>
+                    <td> 16 </td>
+                    <td> Jornalista </td>
+                </tr>
+                <tr>
+                    <td> Ana Maria </td>
+                    <td> Feminino</td>
+                    <td> 16 </td>
+                    <td> Jornalista </td>
+                </tr>
+                <tr>
+                    <td> Ana Maria </td>
+                    <td> Feminino</td>
+                    <td> 16 </td>
+                    <td> Jornalista </td>
+                </tr>
+                <tr>
+                    <td> Ana Maria </td>
+                    <td> Feminino</td>
+                    <td> 16 </td>
+                    <td> Jornalista </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
